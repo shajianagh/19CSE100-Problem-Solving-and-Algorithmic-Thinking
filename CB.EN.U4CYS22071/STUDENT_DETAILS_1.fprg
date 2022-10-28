@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="shaji"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 08:51:37 AM"/>
+        <attribute name="created" value="c2hhamk7WDI4MDsyMDIyLTEwLTI4OzA3OjQ1OjAxIEFNOzIwMzI="/>
+        <attribute name="edited" value="c2hhamk7WDI4MDsyMDIyLTEwLTI4OzA4OjUxOjM3IEFNOzE7MjE0Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;WELCOME TO STUDENT MANAGEMENT SYSTEM&quot;" newline="True"/>
+            <output expression="&quot;ENTER ROLL NUMBER&quot;" newline="True"/>
+            <declare name="RollNO" type="String" array="False" size=""/>
+            <input variable="RollNO"/>
+            <output expression="&quot;ENTER YOUR NAME&quot;" newline="True"/>
+            <declare name="NAME" type="String" array="False" size=""/>
+            <input variable="NAME"/>
+            <output expression="&quot;ENTER HOME ADDRESS&quot;" newline="True"/>
+            <declare name="ADDRESS" type="String" array="False" size=""/>
+            <input variable="ADDRESS"/>
+            <output expression="&quot;ENTER BLOOD GROUP&quot;" newline="True"/>
+            <declare name="BG" type="String" array="False" size=""/>
+            <input variable="BG"/>
+            <output expression="&quot;ENTER PHONE NUMBER&quot;" newline="True"/>
+            <declare name="Phone" type="String" array="False" size=""/>
+            <input variable="Phone"/>
+            <output expression="&quot;ENTER DEPARTMENT ASSIGNED&quot;" newline="True"/>
+            <declare name="DEPT" type="String" array="False" size=""/>
+            <input variable="DEPT"/>
+            <output expression="&quot;STUDENT DETAILS ARE:&quot;" newline="True"/>
+            <output expression="&quot;THE ROLL NUMBER IS:&quot;&amp;RollNO&amp;&quot;  &quot;&amp;&#13;&#10;&quot;THE NAME IS:&quot;&amp;NAME&amp;&quot;  &quot;&amp;&#13;&#10;&quot;THE ADDRESS IS:&quot;&amp;ADDRESS&amp;&quot;  &quot;&amp;&#13;&#10;&quot;THE BLOOD GROUP IS:&quot;&amp;BG&amp;&quot;  &quot;&amp;&#13;&#10;&quot;THE PHONE NUMBER IS:&quot;&amp;Phone&amp;&quot;  &quot;&amp;&#13;&#10;&quot;THE DEPARTMENT ASSIGNED IS:&quot;&amp;DEPT" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

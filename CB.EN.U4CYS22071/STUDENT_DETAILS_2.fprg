@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="shaji"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-10-28 08:17:39 PM"/>
+        <attribute name="created" value="c2hhamk7WDI4MDsyMDIyLTEwLTI4OzA5OjE3OjEwIEFNOzIwMzM="/>
+        <attribute name="edited" value="c2hhamk7WDI4MDsyMDIyLTEwLTI4OzA4OjE3OjM5IFBNOzE7MjE2Ng=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Sem" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER SEMESTER&quot;" newline="True"/>
+            <input variable="Sem"/>
+            <declare name="SC1" type="String" array="False" size=""/>
+            <output expression="&quot;ENTER SUB CODE 1&quot;" newline="True"/>
+            <input variable="SC1"/>
+            <declare name="Marks1" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER MARKS 1&quot;" newline="True"/>
+            <input variable="Marks1"/>
+            <declare name="SC2" type="String" array="False" size=""/>
+            <output expression="&quot;ENTER SUB CODE 2&quot;" newline="True"/>
+            <input variable="SC2"/>
+            <declare name="Marks2" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER MARKS 2&quot;" newline="True"/>
+            <input variable="Marks2"/>
+            <declare name="SC3" type="String" array="False" size=""/>
+            <output expression="&quot;ENTER SUBJECT CODE 3&quot;" newline="True"/>
+            <input variable="SC3"/>
+            <declare name="Marks3" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER MARKS 3&quot;" newline="True"/>
+            <input variable="Marks3"/>
+            <declare name="SC4" type="String" array="False" size=""/>
+            <output expression="&quot;ENTER SUB CODE 4&quot;" newline="True"/>
+            <input variable="SC4"/>
+            <declare name="Marks4" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER MARKS 4&quot;" newline="True"/>
+            <input variable="Marks4"/>
+            <declare name="SC5" type="String" array="False" size=""/>
+            <output expression="&quot;ENTER SUB CODE 5&quot;" newline="True"/>
+            <input variable="SC5"/>
+            <declare name="Marks5" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER MARKS 5&quot;" newline="True"/>
+            <input variable="Marks5"/>
+            <declare name="Total" type="Integer" array="False" size=""/>
+            <assign variable="Total" expression="Marks1+Marks2+Marks3+Marks4+Marks5"/>
+            <output expression="&quot;THE TOTAL IS=&quot;&amp;Total" newline="True"/>
+            <declare name="Avg" type="Real" array="False" size=""/>
+            <assign variable="Avg" expression="(Marks1+Marks2+Marks3+Marks4+Marks5)/5"/>
+            <output expression="&quot;THE AVERAGE=&quot;&amp;Avg" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
