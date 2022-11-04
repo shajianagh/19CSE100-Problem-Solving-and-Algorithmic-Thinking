@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22071"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:51:01 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTExLTA0OzEwOjA1OjQ4IEFNOzMwODg="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTExLTA0OzEwOjUxOjAxIEFNOzI7MzE4Nw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="FINDING REMAINDER WITHOUT USING MOD OPERATION"/>
+            <declare name="DIVIDEND" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER NUMBER TO BE DIVIDED:&quot;" newline="True"/>
+            <input variable="DIVIDEND"/>
+            <declare name="DIVISOR" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER NUMBER TO DIVIDE WITH:&quot;" newline="True"/>
+            <input variable="DIVISOR"/>
+            <declare name="QUOTIENT" type="Integer" array="False" size=""/>
+            <assign variable="QUOTIENT" expression="DIVIDEND/DIVISOR"/>
+            <output expression="&quot;THE QUOTIENT IS:&quot;&amp;QUOTIENT" newline="True"/>
+            <declare name="REMAINDER" type="Integer" array="False" size=""/>
+            <assign variable="REMAINDER" expression="DIVIDEND-(DIVISOR*QUOTIENT)"/>
+            <output expression="&quot;THE REMAINDER IS:&quot;&amp;REMAINDER" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

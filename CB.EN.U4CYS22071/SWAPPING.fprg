@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22071"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:49:18 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTExLTA0OzA5OjUyOjE5IEFNOzMwOTY="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTExLTA0OzEwOjQ5OjE4IEFNOzU7MzIwNQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="TO SWAP TWO VARIABLES WITHOUT 3RD VARIABLE"/>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER VALUE OF A&quot;" newline="True"/>
+            <input variable="A"/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER VALUE OF B&quot;" newline="True"/>
+            <input variable="B"/>
+            <output expression="&quot;THE VALUE OF A  AND B RESPECTIVELY BEFORE SWAPPING IS:&quot;&amp;A&amp;&quot; ,&quot;&amp;B" newline="True"/>
+            <assign variable="A" expression="A+B"/>
+            <assign variable="B" expression="-(B-A)"/>
+            <assign variable="A" expression="A-B"/>
+            <output expression="&quot;THE VALUE OF A  AND B RESPECTIVELY AFTER SWAPPING IS:&quot;&amp;A&amp;&quot; ,&quot;&amp;B" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

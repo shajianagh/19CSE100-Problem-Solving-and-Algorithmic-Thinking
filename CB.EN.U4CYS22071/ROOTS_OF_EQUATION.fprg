@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22071"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:42:06 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTExLTA0OzA5OjI2OjAyIEFNOzMwODk="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTExLTA0OzEwOjQyOjA2IEFNOzQ7MzE5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;FINDING ROOTS OF QUADRATIC EQUATION&quot;" newline="True"/>
+            <declare name="A" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER VALUE OF A(FIRST COEFFICIENT):&quot;" newline="True"/>
+            <comment text="TO GET COEFFICIENT OF X^2"/>
+            <input variable="A"/>
+            <declare name="B" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER VALUE OF B(SECOND COEFFICIENT):&quot;" newline="True"/>
+            <comment text="TO GET COEFFICIENT OF X"/>
+            <input variable="B"/>
+            <declare name="C" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER VALUE OF C(CONSTANT):&quot;" newline="True"/>
+            <comment text="TO GET CONSTANT "/>
+            <input variable="C"/>
+            <output expression="&quot;THE GIVEN QUADRATIC EQUATION IS=&quot;&amp;A&amp;&quot;x^2&quot;&amp;B&amp;&quot;x+&quot;&amp;C" newline="True"/>
+            <declare name="D" type="Real" array="False" size=""/>
+            <assign variable="D" expression="((B)^2-(4*A*C))^(1/2)"/>
+            <declare name="x1" type="Real" array="False" size=""/>
+            <declare name="x2" type="Real" array="False" size=""/>
+            <assign variable="x1" expression="(-B+D)/(2*A)"/>
+            <assign variable="x2" expression="(-B-D)/(2*A)"/>
+            <output expression="&quot;THE ROOTS OF THE EQUATION IS:&quot;&amp;x1&amp;&quot; ,&quot;&amp;x2" newline="True"/>
+            <output expression="&quot;THANK YOU&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
