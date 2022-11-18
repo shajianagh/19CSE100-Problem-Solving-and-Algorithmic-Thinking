@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22071"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-18 11:19:43 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTExLTE4OzA4OjU0OjM1IEFNOzMzNTY="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTExLTE4OzExOjE5OjQzIEFNOzE1OzM1MTE="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;WELCOME TO ATM WITHDRAWAL SYSTEM&quot;" newline="True"/>
+            <declare name="AccntNo" type="Integer" array="False" size=""/>
+            <assign variable="AccntNo" expression="123456789"/>
+            <output expression="&quot;ACCOUNT NUMBER=&quot;&amp;AccntNo" newline="True"/>
+            <declare name="NAME" type="String" array="False" size=""/>
+            <assign variable="NAME" expression="&quot;ANAGH SHAJI&quot;"/>
+            <declare name="BALANCE" type="Real" array="False" size=""/>
+            <assign variable="BALANCE" expression="10000"/>
+            <declare name="PIN1" type="Integer" array="False" size=""/>
+            <assign variable="PIN1" expression="1234"/>
+            <output expression="&quot;NAME OF ACCOUNT HOLDER=&quot;&amp;NAME" newline="True"/>
+            <output expression="&quot;THE AVAILABLES ATM SERVICES ARE:&quot;" newline="True"/>
+            <output expression="&quot;1.WITHDRAW MONEY&quot;" newline="True"/>
+            <output expression="&quot;2.DEPOSIT MONEY&quot;" newline="True"/>
+            <output expression="&quot;3.CHECK BALANCE&quot;" newline="True"/>
+            <output expression="&quot;4.CHANGE PIN&quot;" newline="True"/>
+            <declare name="CH" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER DESIRED OPTION&quot;" newline="True"/>
+            <input variable="CH"/>
+            <if expression="CH=1">
+                <then>
+                    <declare name="PIN2" type="Integer" array="False" size=""/>
+                    <output expression="&quot;ENTER 4-DIGIT SECRET PIN&quot;" newline="True"/>
+                    <input variable="PIN2"/>
+                    <if expression="PIN2=PIN1">
+                        <then>
+                            <declare name="WDA" type="Real" array="False" size=""/>
+                            <comment text="WDA= Withdrawal Amount"/>
+                            <output expression="&quot;ENTER AMOUNT TO BE WITHDRAWN&quot;" newline="True"/>
+                            <input variable="WDA"/>
+                            <if expression="WDA&gt;BALANCE">
+                                <then>
+                                    <output expression="&quot;INSUFFICIENT BALANCE IN ACCOUNT&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;THE WITHDRAWN AMOUNT=&quot;&amp;WDA" newline="True"/>
+                                    <declare name="RB" type="Real" array="False" size=""/>
+                                    <comment text="RB= REMAINING BALANCE AFTER WITHDRAWING"/>
+                                    <assign variable="RB" expression="BALANCE-WDA"/>
+                                    <output expression="&quot;THE REMAINING BALANCE=&quot;&amp;RB" newline="True"/>
+                                    <if expression="RB&lt;500">
+                                        <then>
+                                            <output expression="&quot;PLEASE DEPOSIT SUFFICIENT FUNDS AS MINIMUM BALANCE IS NOT REACHED&quot;" newline="True"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </then>
+                        <else>
+                            <output expression="&quot;INCORRECT PIN ENTERED&quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <if expression="CH=2">
+                        <then>
+                            <output expression="&quot;CURRENT BALANCE=&quot;&amp;BALANCE" newline="True"/>
+                            <declare name="DPA" type="Integer" array="False" size=""/>
+                            <comment text="DPA= DEPOSIT AMOUNT"/>
+                            <output expression="&quot;ENTER AMOUNT TO BE DEPOSITED&quot;" newline="True"/>
+                            <input variable="DPA"/>
+                            <declare name="NB" type="Integer" array="False" size=""/>
+                            <assign variable="NB" expression="DPA+BALANCE"/>
+                            <output expression="&quot;NEW BALANCE=&quot;&amp;NB" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="CH=3">
+                                <then>
+                                    <output expression="&quot;BALANCE AMOUNT IN THE ACCOUNT=&quot;&amp;BALANCE" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="CH=4">
+                                        <then>
+                                            <declare name="PIN3" type="Integer" array="False" size=""/>
+                                            <output expression="&quot;ENTER OLD PIN=&quot;" newline="True"/>
+                                            <input variable="PIN3"/>
+                                            <if expression="PIN3=PIN1">
+                                                <then>
+                                                    <comment text="GOING TO SET NEW PIN "/>
+                                                    <declare name="PIN4" type="Integer" array="False" size=""/>
+                                                    <declare name="PIN5" type="Integer" array="False" size=""/>
+                                                    <output expression="&quot;ENTER NEW PIN=&quot;" newline="True"/>
+                                                    <input variable="PIN4"/>
+                                                    <output expression="&quot;RE-ENTER NEW PIN TO CONFIRM=&quot;" newline="True"/>
+                                                    <input variable="PIN5"/>
+                                                    <comment text="THIS WAS DONE TO CHECK IF THE NEW PIN IS ENTERED CORRECTLY"/>
+                                                    <if expression="PIN4=PIN5">
+                                                        <then>
+                                                            <assign variable="PIN1" expression="PIN4"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;ENTERED PINS DO NOT MATCH&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </then>
+                                                <else/>
+                                            </if>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;VALID OPTION NOT ENTERED&quot;" newline="True"/>
+                                            <output expression="&quot;PLEASE TRY AGAIN LATER&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="&quot;THANK YOU FOR USING ATM SERVICES&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
