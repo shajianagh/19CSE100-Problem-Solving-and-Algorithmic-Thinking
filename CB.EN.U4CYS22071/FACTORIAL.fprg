@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22071"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:18:11 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTEyLTAyOzA4OjUyOjQzIEFNOzMzNDc="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTEyLTAyOzA5OjE4OjExIEFNOzI7MzQ1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="N" type="Integer" array="False" size=""/>
+            <declare name="PRD" type="Integer" array="False" size=""/>
+            <output expression="&quot;ENTER NUMBER TO FIND FACTORIAL OF&quot;" newline="True"/>
+            <input variable="N"/>
+            <assign variable="PRD" expression="1"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="N" direction="inc" step="1">
+                <assign variable="PRD" expression="PRD*i"/>
+            </for>
+            <output expression="&quot;THE FACTORIAL IS:&quot;&amp;PRD" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22071"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:33:57 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTEyLTAyOzA5OjI1OjA3IEFNOzMzNDg="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjA3MTsyMDIyMjNNQVlDTzEwODsyMDIyLTEyLTAyOzA5OjMzOjU3IEFNOzI7MzQ2MQ=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <output expression="&quot;THE MULTIPLICATION TABLE OF &quot;&amp;i&amp;&quot; is&quot;" newline="True"/>
+                <declare name="j" type="Integer" array="False" size=""/>
+                <for variable="j" start="1" end="10" direction="inc" step="1">
+                    <output expression="i&amp;&quot; x &quot;&amp;j&amp;&quot; = &quot;&amp;i*j" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
