@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Avi Nair"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 09:43:29 AM"/>
+        <attribute name="created" value="QXZpIE5haXI7TEFQVE9QLTRHMTBQQlJFOzIwMjItMTItMDk7MDk6MjI6MTYgQU07MzAwNw=="/>
+        <attribute name="edited" value="QXZpIE5haXI7TEFQVE9QLTRHMTBQQlJFOzIwMjItMTItMDk7MDk6NDM6MjkgQU07MjszMTIz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Program to create an array, input values, store and print values"/>
+            <comment text="Start Program"/>
+            <comment text="Declaring array variable"/>
+            <declare name="IntArray" type="Integer" array="True" size="10"/>
+            <comment text="Declaring basic single loop counter variable"/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <output expression="&quot;Enter array elements-&quot;" newline="True"/>
+            <comment text="Loop to input array values"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter element &quot; &amp; i+1" newline="True"/>
+                <input variable="IntArray[i]"/>
+            </for>
+            <output expression="&quot;Entered array is - &quot;" newline="True"/>
+            <comment text="Loop to print array values in order"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Element at index &quot; &amp; i &amp; &quot; is - &quot; &amp; IntArray[i]" newline="True"/>
+            </for>
+            <comment text="End program"/>
+        </body>
+    </function>
+</flowgorithm>

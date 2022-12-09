@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Avi Nair"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 11:10:34 AM"/>
+        <attribute name="created" value="QXZpIE5haXI7TEFQVE9QLTRHMTBQQlJFOzIwMjItMTItMDk7MTA6NDE6MTEgQU07Mjk5NQ=="/>
+        <attribute name="edited" value="QXZpIE5haXI7TEFQVE9QLTRHMTBQQlJFOzIwMjItMTItMDk7MTA6NDE6NDYgQU07MTtBdmkgTmFpcjtMQVBUT1AtNEcxMFBCUkU7MjAyMi0xMi0wOTsxMDoyMzoyMSBBTTtMYXJnZXN0RWxlbWVudEluQXJyYXkuZnByZzs4ODMy"/>
+        <attribute name="edited" value="QXZpIE5haXI7TEFQVE9QLTRHMTBQQlJFOzIwMjItMTItMDk7MTE6MTA6MzQgQU07MjszMTA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Program to find the frequency of any element in a given array"/>
+            <comment text="Start the program"/>
+            <comment text="Declare variables for array size, loop, frequency, and element to find frequency for"/>
+            <declare name="size, i, number, frequency" type="Integer" array="False" size=""/>
+            <comment text="get array size"/>
+            <output expression="&quot;Enter array size&quot;" newline="True"/>
+            <input variable="size"/>
+            <comment text="declare array"/>
+            <declare name="array" type="Integer" array="True" size="size"/>
+            <comment text="Input array"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;size">
+                <output expression="&quot;Enter element number &quot; &amp; i+1" newline="True"/>
+                <input variable="array[i]"/>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <comment text="get element to find frequency for"/>
+            <output expression="&quot;Enter element whose frequency you need&quot;" newline="True"/>
+            <input variable="number"/>
+            <comment text="initialize frequency"/>
+            <assign variable="frequency" expression="0"/>
+            <comment text="Find frequency by checking each element"/>
+            <for variable="i" start="0" end="size-1" direction="inc" step="1">
+                <if expression="array[i]==number">
+                    <then>
+                        <assign variable="frequency" expression="frequency+1"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <comment text="Display final result"/>
+            <output expression="&quot;Given Element &quot; &amp; number &amp; &quot; occurs &quot; &amp; frequency &amp; &quot; times.&quot;" newline="True"/>
+            <comment text="End Program"/>
+        </body>
+    </function>
+</flowgorithm>

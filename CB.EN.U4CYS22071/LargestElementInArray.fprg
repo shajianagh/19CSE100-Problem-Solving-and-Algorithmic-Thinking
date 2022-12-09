@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Avi Nair"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 10:56:26 AM"/>
+        <attribute name="created" value="QXZpIE5haXI7TEFQVE9QLTRHMTBQQlJFOzIwMjItMTItMDk7MTA6MjM6MjEgQU07Mjk5Ng=="/>
+        <attribute name="edited" value="QXZpIE5haXI7TEFQVE9QLTRHMTBQQlJFOzIwMjItMTItMDk7MTA6NTY6MjYgQU07MjszMTE2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Program to find the largest element in a user-defined array"/>
+            <comment text="Start program"/>
+            <comment text="Declare variables for size, loop count, and largest number"/>
+            <declare name="size, i, largest" type="Integer" array="False" size=""/>
+            <comment text="Get array size "/>
+            <output expression="&quot;Enter array size&quot;" newline="True"/>
+            <input variable="size"/>
+            <comment text="Declare array based on size recieved"/>
+            <declare name="array" type="Integer" array="True" size="size"/>
+            <comment text="Input array in loop"/>
+            <assign variable="i" expression="0"/>
+            <while expression="i&lt;size">
+                <output expression="&quot;Enter element number &quot; &amp; i+1" newline="True"/>
+                <input variable="array[i]"/>
+                <comment text="Check largest element simulataneously"/>
+                <if expression="i&gt;0">
+                    <then>
+                        <if expression="array[i]&gt;largest">
+                            <then>
+                                <assign variable="largest" expression="array[i]"/>
+                            </then>
+                            <else/>
+                        </if>
+                    </then>
+                    <else>
+                        <assign variable="largest" expression="array[i]"/>
+                    </else>
+                </if>
+                <assign variable="i" expression="i+1"/>
+            </while>
+            <output expression="&quot;Largest number in given array is &quot; &amp; largest" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
